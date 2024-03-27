@@ -29,11 +29,11 @@ export const login = (formData,navigate) => {
             localStorage.setItem('userID',res.data.userId)
       
             if(res.data.token){
-                navigate("/");
+                navigate("/task");
                
             }
             else{
-                navigate("/login")
+                navigate("/")
             }
         } catch (error) {
             console.log(error);
