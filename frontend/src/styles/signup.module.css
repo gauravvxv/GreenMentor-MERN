@@ -1,0 +1,70 @@
+.container{
+    padding-top: 80px;
+    padding-bottom: 44px;
+    background-color: #b0c4de;
+}
+
+.parent{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.formInp{
+    width: 50%;
+}
+
+form > input{
+width: 300px;
+height: 50px;
+border: none;
+text-align: center;
+border-radius: 20px;
+text-align: center;
+
+}
+
+form > button{
+    width: 280px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.link{
+    text-decoration: none;
+    padding-left: 5px;
+    color: black;
+}
+
+.link:hover{
+   color: red;
+}
+
+.error{
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-bottom: 55px;
+    }
+    .image {
+        display: none;
+    }
+    .formInp{
+        padding-right: 120px;
+    }
+    form > button{
+      margin-left: 15px;
+    }
+    .account {
+        padding-left: 60px;
+        width: 100%;
+    }
+    .error{
+        color: red;
+    }
+}

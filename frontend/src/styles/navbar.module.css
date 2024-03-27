@@ -1,0 +1,32 @@
+
+.container{
+    background-color: #333333;
+}
+
+.parent{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.heading{
+    padding-left: 20px;
+    font-size: 10px;
+    color: white;
+}
+.btncontainer{
+    display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+.btn  {
+    background-color: #319795;
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    text-decoration: none;
+}
