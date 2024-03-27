@@ -1,10 +1,13 @@
-import { USERLOGIN,USERLOGOUT,USERSIGNUP } from "../actionTypes";
+import { USERLOGIN,USERSIGNUP } from "../actionTypes";
 
 const initialState = {
 	user: null,
 	registerState: false,
 	loginState: false,
 	token: "",
+	userID: "",
+	profile: null,
+	loadingProfile: false
 };
 
 const authReducer = (state = initialState, action) => {
@@ -20,7 +23,9 @@ const authReducer = (state = initialState, action) => {
 				registerState: false,
 				user: action.payload.user,
 				token: action.payload.token,
+				userID: action.payload.userID
 			};
+		
 
 		default:
 			return state;

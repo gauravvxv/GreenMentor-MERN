@@ -30,3 +30,28 @@
     cursor: pointer;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    
+    .container{
+        width: 80%;
+    }
+    
+
+    .parent {
+        display: flex;
+        justify-content: center; 
+        width: 100%; 
+    }
+
+    .heading {
+        display: none; /* Hide the heading at smaller screen sizes */
+    }
+
+    .btncontainer {
+        display: flex;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+}

@@ -28,9 +28,16 @@ setFormData({...formData,[e.target.name]: e.target.value})
       return;
     }
     else{
-      dispatch(login(formData,navigate)); 
-      
+      try {
+        dispatch(login(formData,navigate)); 
+      } catch (error) {
+        setError('Invalid email or password. Please try again.')
+      }
+
     }
+  
+      
+    
   }
 
   return (

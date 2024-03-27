@@ -24,14 +24,14 @@ text-align: center;
 
 }
 
-form > button{
+/* form > button{
     width: 280px;
     height: 40px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     font-size: 15px;
-}
+} */
 
 .link{
     text-decoration: none;
