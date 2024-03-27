@@ -31,7 +31,7 @@ const [error,setError] = useState("");
       dispatch(signup(formData))
 
       setTimeout(()=>{
-        navigate("/login")
+        navigate("/")
       },1000)
     } catch (error) {
       setError('Failed to create user. Please try again.')
